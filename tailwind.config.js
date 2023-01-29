@@ -9,7 +9,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrrat: ["var(--font-montserrat)"],
+        montserrrat: ["var(--font-rubik)"],
+      },
+      colors: {
+        primary: "#9AD0EC",
+        secondary: "#1C6DD0",
       },
     },
   },

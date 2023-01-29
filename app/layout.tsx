@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Montserrat } from "@next/font/google";
+import { Signika_Negative } from "@next/font/google";
 
-const montserrat = Montserrat({
+const signika_negative = Signika_Negative({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-Signika_Negative",
 });
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${montserrat.className}`}>{children}</body>
+      <body className={`${signika_negative.className}`}>{children}</body>
     </html>
   );
 }
