@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Signika_Negative } from "@next/font/google";
+import { Karla } from "@next/font/google";
 
-const signika_negative = Signika_Negative({
+const karla = Karla({
   subsets: ["latin"],
-  variable: "--font-Signika_Negative",
+  variable: "--font-Karla",
 });
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={`${signika_negative.className}`}>{children}</body>
+      <body className={`${karla.className}`}>{children}</body>
     </html>
   );
 }

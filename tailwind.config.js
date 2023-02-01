@@ -12,8 +12,8 @@ module.exports = {
         montserrrat: ["var(--font-rubik)"],
       },
       colors: {
-        primary: "#9AD0EC",
-        secondary: "#1C6DD0",
+        primary: "#caf0f9",
+        secondary: "#0077b6",
       },
     },
   },
