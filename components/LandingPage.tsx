@@ -9,6 +9,7 @@ export default function LandingPage() {
       <div className="hero h-screen">
         <FloatingDocsBackground />
       </div>
+      <div className="bg-cyan-500 h-screen"></div>
     </>
   );
 }
