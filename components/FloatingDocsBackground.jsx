@@ -20,18 +20,19 @@ export default function FloatingDocsBackground() {
   let canvas = useRef(null);
 
   //parameters
-  const docCount = 10;
-  const minGap = 50;
-  const maxMove = 80;
-  const sizeRange = [8, 15];
-  const speedRange = [0.2, 0.4];
+  const docCount = 20;
+  const minGap = 100;
+  const maxMove = 20;
+  const sizeRange = [30, 40];
+  const speedRange = [0, 1];
   const images = [
-    "/images/icons/hero/1.png",
-    "/images/icons/hero/2.png",
-    "/images/icons/hero/3.png",
-    "/images/icons/hero/4.png",
-    "/images/icons/hero/5.png",
-    "/images/icons/hero/6.png",
+
+    "/images/icons/hero/1.svg",
+    "/images/icons/hero/2.svg",
+    "/images/icons/hero/3.svg",
+    // "/images/icons/hero/4.svg",
+    "/images/icons/hero/5.svg",
+    // "/images/icons/hero/6.png",
   ];
 
   let docs = [];
@@ -73,6 +74,7 @@ export default function FloatingDocsBackground() {
       for (let i = 0; i < docCount; i++) {
         let flag = true;
         while (flag) {
+          
           let newDoc = new Doc(
             randomRange(minGap, window.innerWidth - minGap),
             randomRange(minGap, window.innerHeight - minGap),
@@ -100,12 +102,12 @@ export default function FloatingDocsBackground() {
     }
 
     function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, 1280, 720);
 
       for (let d of docs) {
         d.draw();
-        d.x += d.vx;
-        d.y += d.vy;
+        d.x += d.vx/20;
+        d.y += d.vy/20;
         if (d.distanceTo(d.originX, d.originY) > maxMove) {
           d.vx = -1 * signum(d.vx) * randomRange(speedRange[0], speedRange[1]);
           d.vy = -1 * signum(d.vy) * randomRange(speedRange[0], speedRange[1]);
@@ -125,7 +127,7 @@ export default function FloatingDocsBackground() {
     <canvas
       ref={canvas}
       width="1280"
-      height={"720"}    
+      height="720"
       className="w-full h-full"
     />
   );
