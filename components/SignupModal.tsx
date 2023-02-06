@@ -21,8 +21,6 @@ export default function SignupModal() {
             <input type="password" className="py-2 px-1 border-2 border-secondary rounded-xl w-[30vw] active:border-primary"/> 
         </div>
         <button className="bg-[#1f5982] text-white py-2 px-4 rounded-lg w-[10vw] text-xl font-bold tracking-tighter hover:scale-105">Submit</button>
-
-
     </div>
     </>
 }

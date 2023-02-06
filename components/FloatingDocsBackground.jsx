@@ -102,7 +102,7 @@ export default function FloatingDocsBackground() {
     }
 
     function draw() {
-      ctx.clearRect(0, 0, 1280, 720);
+      ctx.clearRect(0, 0, canvas.current.offsetWidth, canvas.current.offsetHeight);
 
       for (let d of docs) {
         d.draw();
@@ -127,7 +127,7 @@ export default function FloatingDocsBackground() {
     <canvas
       ref={canvas}
       width="1280"
-      height="720"
+      height="800"
       className="w-full h-full"
     />
   );
