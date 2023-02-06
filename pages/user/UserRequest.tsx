@@ -1,7 +1,7 @@
 "use client";
 
-import UserRequestModal from "@/components/UserRequestModal";
-import UserRequestPreview from "@/components/UserRequestPreview";
+import UserRequestModal from "@/components/user/UserRequestModal";
+import UserRequestPreview from "@/components/user/UserRequestPreview";
 
 export default function UserRequest() {
   return (
