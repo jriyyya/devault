@@ -12,7 +12,7 @@ export default function UserDashboard(){
                 </div>
             </div>
             <div className="px-[15vw] flex flex-row justify-between py-[10vh] bg-secondary">
-                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer">
+                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer hover:scale-105">
                     <div className="text-3xl font-bold tracking-tight text-primary">
                         My Request
                     </div>
@@ -32,7 +32,7 @@ export default function UserDashboard(){
                     </div>
 
                 </div>
-                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer">
+                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer hover:scale-105">
                 <div className="text-3xl font-bold tracking-tight text-primary">
                        New Request
                     </div>
@@ -52,7 +52,7 @@ export default function UserDashboard(){
                     </div>
                     </div>
                 </div>
-                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer">
+                <div className="bg-white w-[22vw] h-[40vh] rounded-[10vh] px-10 py-10 flex flex-col gap-5 cursor-pointer hover:scale-105">
                 <div className="text-3xl font-bold tracking-tight text-primary">
                         My Documents
                     </div>
