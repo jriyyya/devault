@@ -3,7 +3,12 @@ export default function UserDashboard() {
   return (
     <>
       <div>
-        <div className="bg-[#1f435d] px-[25vw] py-[10vh] flex flex-col justify-center gap-5">
+        <div className="bg-[#1f435d] px-[15vw] py-[8vh] flex flex-row gap-10">
+          <div className="basis-[20%] flex justify-center bg-white rounded-full aspect-square overflow-hidden">
+            <img src="/images/user/dashboard/boy.webp" alt="boy" />
+          </div>
+          <div className="basis-[80%] flex flex-col justify-center gap-5">
+
           <div className="text-white tracking-tighter text-5xl font-extrabold">
             User Dashboard
           </div>
@@ -11,6 +16,7 @@ export default function UserDashboard() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex culpa
             labore fuga! Tenetur voluptate alias quod odit, deserunt eos
             impedit.
+          </div>
           </div>
         </div>
         <div className="px-[15vw] flex flex-row justify-between py-[10vh] bg-secondary">
