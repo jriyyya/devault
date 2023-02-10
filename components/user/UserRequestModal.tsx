@@ -14,7 +14,7 @@ export default function UserRequestModal() {
               New Aadhar Card
             </div>
             <div
-              className="cursor-pointer transition ease-in delay-150 hover:scale-125"
+              className={`cursor-pointer transition ease-in delay-150 hover:scale-125 ${showDetails ? 'rotate-180' : ''}`}
               onClick={() => {
                 setShowDetails(!showDetails);
               }}
