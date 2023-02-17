@@ -7,7 +7,7 @@ export default function UserRequest() {
   return (
     <>
       <div className="h-screen px-[10vw]">
-        <div className="text-center text-6xl font-extrabold py-10 tracking-tighter text-primary">My Request</div>
+        <div className="text-center text-7xl font-extrabold py-8 tracking-tighter text-primary">My Request</div>
         <div className="flex flex-row justify-between w-full">
           <div className="flex flex-col gap-2 h-[75vh] basis-[40%] border-4 border-primary p-4 rounded-[1rem] bg-primary overflow-y-scroll">
             <div>
@@ -46,7 +46,7 @@ export default function UserRequest() {
               <UserRequestPreview status="successful" preview={false} />
             </div>
           </div>
-          <div className="basis-[60%]">
+          <div className="basis-[60%] ml-5">
             <UserRequestModal />
           </div>
         </div>
